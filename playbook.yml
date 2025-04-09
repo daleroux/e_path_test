@@ -1,0 +1,10 @@
+---
+- name: Deploy the web servers
+  hosts: localhost
+  #become: true
+  gather_facts: false
+
+  tasks:
+    - name: Pause for 1h 
+      ansible.builtin.pause:
+        minutes: 60
